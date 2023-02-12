@@ -2,15 +2,39 @@
 
 # AirBnB clone project
 
-### First step: Write a command interpreter to manage your AirBnB objects.
-This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
+This is the first step towards building our first full web application: the AirBnB clone. This first step is very important because we will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
-Each task is linked and will help you to:
+## Console 
+With the console we will :
+- create your data model
+- manage (create, update, destroy, etc) objects via a console / command interpreter
+- store and persist objects to a file (JSON file)
 
-put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances
-create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
-create all classes used for AirBnB (User, State, City, Place…) that inherit from BaseModel
-create the first abstracted storage engine of the project: File storage.
-create all unittests to validate all our classes and storage engine
+The first piece is to manipulate a powerful storage system. This storage engine will give us an abstraction between “My object” and “How they are stored and persisted”. This means: from your console code (the command interpreter itself) and from the front-end and RestAPI you will build later, you won’t have to pay attention (take care) of how your objects are stored.
+
+This abstraction will also allow you to change the type of storage easily without updating all of your codebase.
+
+The console will be a tool to validate this storage engine
+
+![engine.png](engine.png)
+
+## Synopsis 
+The console can `create`, `destroy`, `show`, `update` objects.
+```bash
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  create  destroy  help  quit  show update
+
+(hbnb)
+```
+## Data diagram
+
+![diagram.png](diagram.png)
 
 
+## AUTHORS
+
+- [@PrinceKan](https://www.github.com/PrinceKan)
+- [@SafieDeme9](https://www.github.com/SafieDeme9)
